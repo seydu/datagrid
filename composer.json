@@ -1,0 +1,49 @@
+{
+    "name": "seydu/datagrid",
+    "type": "library",
+    "description": "PHP library to build datagrids",
+    "keywords": [
+        "seydu",
+        "datagrid"
+    ],
+    "homepage": "https://github.com/seydu/datagrid",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Saidou Gueye",
+            "email": "saidougueye@gmail.com",
+            "homepage": "piyangki.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "~5.5|~5.6|~7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "~4.0||~5.0",
+        "scrutinizer/ocular": "~1.1",
+        "squizlabs/php_codesniffer": "~2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Seydu\\Datagrid\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Seydu\\Datagrid\\Test": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "format": "phpcbf --standard=psr2 src/"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
